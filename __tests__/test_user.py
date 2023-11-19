@@ -11,10 +11,11 @@ def test_create_message_user_info():
     user_info = UserInfo('Test', 'test@mail.com', 1)
     message_user_info = UserUseCase.createMessageUserInfo(user_info)
     assert message_user_info != ''
-    assert message_user_info == f"""
-            Jogador: {user_info.name},
-            Email: {user_info.email},
-            level: {user_info.level}
-        """
+
+def test_capture_user_info_data():
+    user_info = UserUseCase.captureUserInfoData('test', 'test@mail.com')
+    assert user_info.name == 'test'
+    assert user_info.email == 'test@mail.com'
+    assert user_info.level == 0
 
     

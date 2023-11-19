@@ -10,8 +10,24 @@ from src.utils.message_util import MessageUtil
 from src.useCases.user_use_case import UserUseCase
 from src.models.user_model import UserInfo, UserData, LevelAllow
 
+JSON_USER_NAME = 'user_infos.json'
+
 def execute():
-    MessageUtil.print_intro()
+    try:
+            # Ações do cliente
+            MessageUtil.printIntro()
+            data_user_json: UserData = JSONUtil.loadJson(JSON_USER_NAME)
+            user_info: UserInfo = UserUseCase.captureUserInfoData()
+            data_to_update: UserData = UserUseCase.updateUserInfo(user_info, data_user_json) 
+            print(UserUseCase.createMessageUserInfo(user_info))
+            JSONUtil.createJson(data_to_update, JSON_USER_NAME)
+
+            # Ações do game
+            MessageUtil.showLevels(data_user_json['levels_allowed'])
+    except Exception as e:
+            print("Erro na execução do programa", e)
+    
+
 
 def main():
     while True:

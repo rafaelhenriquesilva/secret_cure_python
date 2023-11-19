@@ -1,5 +1,6 @@
+from src.models.user_model import LevelAllow
 class MessageUtil:
-    def print_intro():
+    def printIntro():
         intro_text = """
         Bem-vindo à jornada da cura secreta!
         
@@ -13,3 +14,18 @@ class MessageUtil:
         """
 
         print(intro_text)
+
+    def showLevels( levels_allowed: list[LevelAllow]): 
+        if(len(levels_allowed) > 0):
+            print('Breve apresentação dos niveis para percorrer nessa aventura da medicina!!')
+            for level in levels_allowed:
+                level_information = """
+
+                    Titulo: {}
+                    Legenda: {}
+                    Level minimo: {}
+                    level maximo: {}
+
+                """.format(level['title'], level['text'], level['min_level'], level['max_level'])
+
+                print(level_information)
