@@ -12,3 +12,11 @@ def test_read_user_infos_json():
     assert len(dados_json['user_info']['name']) != ''
     assert len(dados_json['user_info']['email']) != ''
 
+def test_create_json():
+    fake_data = {
+        'title': 'Fake json',
+        'created': True
+    }
+
+    JSONUtil.createJson(fake_data, 'fake.json')
+
