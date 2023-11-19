@@ -9,32 +9,32 @@
         {
             "min_level": 1,
             "max_level": 1,
-            "title": "Iniciante dos diagnósticos",
-            "text": "Você está plantando as sementes do conhecimento médico, aprendendo a interpretar os sinais e sintomas para encontrar o caminho certo para os pacientes."
+            "title": "Iniciante dos diagnosticos",
+            "text": "Tu esta plantando as sementes do conhecimento medicinal, aprendendo a interpretar os sinais e sintomas para encontrar o caminho certo para os pacientes."
         },
         {
             "min_level": 2,
             "max_level": 2,
-            "title": "Intermediário dos diagnósticos",
-            "text": "Você está aprimorando suas habilidades, conectando os pontos e começando a ver padrões. Continue assim, cada diagnóstico é um degrau rumo à maestria."
+            "title": "Intermediario dos diagnosticos",
+            "text": "Tu esta aprimorando suas habilidades, conectando os pontos e iniciando a ver padroes. Continue assim, cada diagnostico um degrau rumo a maestria."
         },
         {
             "min_level": 3,
             "max_level": 3,
-            "title": "Mestre dos diagnósticos",
-            "text": "Seu olhar clínico é afiado e suas decisões são precisas. Continue inspirando outros com sua dedicação e conhecimento na busca pela saúde dos pacientes."
+            "title": "Mestre dos diagnosticos",
+            "text": "Seu olhar clinico afiado e suas assertividade. Continue inspirando outros com seu empenho e conhecimento na busca pela saude dos pacientes."
         },
         {
             "min_level": 4,
             "max_level": 4,
-            "title": "Especialista dos diagnósticos",
-            "text": "Sua habilidade em diagnosticar casos complexos é notável e seu compromisso com a excelência é admirável."
+            "title": "Especialista dos diagnosticos",
+            "text": "Sua habilidade em diagnosticar casos complexos notavel e seu compromisso com a excelência admiravel."
         },
         {
             "min_level": 5,
             "max_level": 5,
-            "title": "Indomável dos diagnósticos",
-            "text": "Sua abordagem é única, sua curiosidade é insaciável e sua capacidade de enfrentar desafios é incomparável. Continue desbravando novos horizontes na medicina!"
+            "title": "Indomavel dos diagnosticos",
+            "text": "Sua abordagem unica, sua curiosidade insaciavel e sua capacidade de enfrentar desafios incomparavel. Continue desbravando novos horizontes na medicina!"
         }
     ],
     "user_info": {
