@@ -1,157 +1,118 @@
 {
     "categories": [
         {
-            "title": "Saude Mental",
+            "title": "Saúde Mental",
             "api_name": "saude_mental",
             "text": ""
         }
     ],
     "contents": [
         {
-            "title": "Cuidando da saude mental",
-            "text": "",
+            "title": "Saúde Mental",
+            "text": "A saúde mental é tão crucial quanto a saúde física para o bem-estar geral de uma pessoa. Envolve o equilíbrio emocional, psicológico e social, influenciando a maneira como lidamos com o estresse, tomamos decisões e interagimos com os outros. Cuidar da saúde mental significa cultivar pensamentos positivos, lidar com emoções de forma saudável e buscar apoio quando necessário.",
             "category": "saude_mental"
         },
         {
-            "title": "A importancia de cuidar da mente",
-            "text": "",
+            "title": "Alimentação Saudável",
+            "text": "Uma alimentação saudável desempenha um papel vital na promoção da saúde e do bem-estar. Consumir uma variedade de alimentos nutritivos fornece ao corpo os nutrientes necessários para funcionar corretamente. Isso inclui uma combinação de frutas, vegetais, proteínas magras, grãos integrais e gorduras saudáveis. Além disso, é fundamental manter um equilíbrio entre a ingestão de calorias e a atividade física para um estilo de vida saudável.",
             "category": "saude_mental"
         }
+
         
     ],
     "questions": [
         {
-            "text": "Pergunta 1 ?",
-            "correct_answer_id": 1,
+            "text": "O que é saúde mental e por que é importante cuidar dela?",
+            "correct_answer_id": 2,
             "category": "saude_mental",
             "answers": [
                 {
-                    "text": "resposta certa",
+                    "text": "Saúde mental refere-se apenas à ausência de doenças mentais graves.",
                     "id": 1
                 },
                 {
-                    "text": "resposta errada 1",
+                    "text": "É o equilíbrio emocional, psicológico e social, crucial para o bem-estar geral.",
                     "id": 2
                 },
                 {
-                    "text": "resposta errada 2",
+                    "text": "Significa evitar o estresse em todas as situações.",
                     "id": 3
-                },
-                {
-                    "text": "resposta errada 3",
-                    "id": 4
-                },
-                {
-                    "text": "resposta errada 4",
-                    "id": 5
                 }
             ]
         },
         {
-            "text": "Pergunta 2 ?",
-            "correct_answer_id": 1,
+            "text": "Quais são algumas estratégias simples que podem ajudar a melhorar a saúde mental no dia a dia?",
+            "correct_answer_id": 2,
             "category": "saude_mental",
             "answers": [
                 {
-                    "text": "resposta certa",
+                    "text": "Ignorar os problemas e não falar sobre emoções.",
                     "id": 1
                 },
                 {
-                    "text": "resposta errada 1",
+                    "text": "Praticar atividades físicas, buscar hobbies e ter uma boa noite de sono.",
                     "id": 2
                 },
                 {
-                    "text": "resposta errada 2",
+                    "text": "Isolar-se completamente das interações sociais.",
                     "id": 3
-                },
-                {
-                    "text": "resposta errada 3",
-                    "id": 4
-                },
-                {
-                    "text": "resposta errada 4",
-                    "id": 5
                 }
             ]
         },
         {
-            "text": "Pergunta 3 ?",
+            "text": "Por que é fundamental procurar ajuda profissional quando enfrentamos dificuldades emocionais ou psicológicas?",
             "category": "saude_mental",
-            "correct_answer_id": 1,
+            "correct_answer_id": 2,
             "answers": [
                 {
-                    "text": "resposta certa",
+                    "text": "Porque é uma moda atual procurar terapia.",
                     "id": 1
                 },
                 {
-                    "text": "resposta errada 1",
+                    "text": "Profissionais de saúde mental podem oferecer suporte, diagnóstico correto e estratégias para lidar com questões emocionais.",
                     "id": 2
                 },
                 {
-                    "text": "resposta errada 2",
+                    "text": "É melhor enfrentar os problemas sozinho, sem a ajuda de ninguém.",
                     "id": 3
-                },
-                {
-                    "text": "resposta errada 3",
-                    "id": 4
-                },
-                {
-                    "text": "resposta errada 4",
-                    "id": 5
                 }
             ]
         },
         {
-            "text": "Pergunta 4 ?",
+            "text": "Por que é importante manter uma alimentação equilibrada e saudável?",
             "category": "saude_mental",
-            "correct_answer_id": 1,
+            "correct_answer_id": 2,
             "answers": [
                 {
-                    "text": "resposta certa",
+                    "text": "Para seguir as tendências da moda.",
                     "id": 1
                 },
                 {
-                    "text": "resposta errada 1",
+                    "text": "Uma alimentação equilibrada fornece ao corpo os nutrientes necessários para funcionar corretamente.",
                     "id": 2
                 },
                 {
-                    "text": "resposta errada 2",
+                    "text": "Porque não importa o que comemos, o corpo sempre se adapta.",
                     "id": 3
-                },
-                {
-                    "text": "resposta errada 3",
-                    "id": 4
-                },
-                {
-                    "text": "resposta errada 4",
-                    "id": 5
                 }
             ]
         },
         {
-            "text": "Pergunta 5 ?",
-            "correct_answer_id": 1,
+            "text": "Quais são alguns componentes essenciais de uma alimentação saudável?",
+            "correct_answer_id": 2,
             "category": "saude_mental",
             "answers": [
                 {
-                    "text": "resposta certa",
+                    "text": "Apenas frutas e legumes são essenciais para uma alimentação saudável.",
                     "id": 1
                 },
                 {
-                    "text": "resposta errada 1",
+                    "text": "Uma combinação de frutas, vegetais, proteínas magras, grãos integrais e gorduras saudáveis.",
                     "id": 2
                 },
                 {
-                    "text": "resposta errada 2",
+                    "text": "Qualquer alimento pode ser consumido desde que seja em pequenas quantidades.",
                     "id": 3
-                },
-                {
-                    "text": "resposta errada 3",
-                    "id": 4
-                },
-                {
-                    "text": "resposta errada 4",
-                    "id": 5
                 }
             ]
         }
