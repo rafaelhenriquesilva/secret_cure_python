@@ -20,12 +20,10 @@ class MessageUtil:
             print('Breve apresentação dos niveis para percorrer nessa aventura da medicina!!')
             for level in levels_allowed:
                 level_information = """
-
                     Titulo: {}
                     Legenda: {}
                     Level minimo: {}
                     level maximo: {}
-
-                """.format(level['title'], level['text'], level['min_level'], level['max_level'])
+            """.format(level['title'], level['text'], level['min_level'], level['max_level'])
 
                 print(level_information)

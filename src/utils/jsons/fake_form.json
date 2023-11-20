@@ -1,0 +1,38 @@
+{
+    "categories": [
+        {
+            "title": "test category",
+            "api_name": "test",
+            "text": "",
+            "position": 1
+        }
+    ],
+    "contents": [
+        {
+            "title": "Test content",
+            "text": "test",
+            "category": "test"
+        }
+    ],
+    "questions": [
+        {
+            "text": "Test Question",
+            "correct_answer_id": 1,
+            "category": "test",
+            "answers": [
+                {
+                    "text": "Sim",
+                    "id": 1
+                },
+                {
+                    "text": "Não",
+                    "id": 2
+                },
+                {
+                    "text": "Talvez",
+                    "id": 3
+                }
+            ]
+        }
+    ]
+}

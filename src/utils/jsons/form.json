@@ -3,7 +3,8 @@
         {
             "title": "Saúde Mental",
             "api_name": "saude_mental",
-            "text": ""
+            "text": "",
+            "position": 1
         }
     ],
     "contents": [
