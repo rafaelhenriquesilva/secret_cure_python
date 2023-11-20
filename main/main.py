@@ -9,6 +9,7 @@ from src.utils.message_util import MessageUtil
 
 from src.models.user_model import UserInfo, UserData
 from src.models.form_model import FormData, Category
+from src.models.response_model import ResponseForm
 
 from src.useCases.user_use_case import UserUseCase
 from src.useCases.form_use_case import FormUseCase
@@ -29,16 +30,15 @@ def execute():
             data_user_json: UserData = JSONUtil.loadJson(JSON_USER_NAME)
             user_info: UserInfo = UserUseCase.captureUserInfoData()
             data_to_update: UserData = UserUseCase.updateUserInfo(user_info, data_user_json) 
-            print(UserUseCase.createMessageUserInfo(user_info))
             JSONUtil.createJson(data_to_update, JSON_USER_NAME)
 
             # Ações do game
             MessageUtil.showLevels(data_user_json['levels_allowed'])
-            execute_game()
+            execute_game(user_info, data_user_json)
     except Exception as e:
             print("Erro na execução do programa", e)
     
-def execute_game():
+def execute_game(user_info: UserInfo, data_user_json: UserData):
     data_form_json: FormData = FormUseCase.convertJsonInFormData(JSON_FORM_NAME)
     FormUseCase.showCategories(data_form_json.categories)
 
@@ -55,8 +55,11 @@ def execute_game():
                         if doQuestions.lower() != 's':
                             print(TEXT_JSONS['STUDY_MORE']) 
                         else:
-                            filtered_question = QuestionUseCase.showQuestionsAndAwnsers(data_form_json.questions, categories[0].api_name)
-
+                            response_form: ResponseForm = QuestionUseCase.showQuestionsAndAwnsers(data_form_json.questions, categories[0].api_name)
+                            user_info = UserUseCase.updateLevelUser(user_info, response_form.questionCorrects)
+                            data_to_update: UserData = UserUseCase.updateUserInfo(user_info, data_user_json) 
+                            JSONUtil.createJson(data_to_update, JSON_USER_NAME)
+                            UserUseCase.createMessageUserInfo(user_info, data_user_json['levels_allowed'])
             else:
                 print('Não foi encontrado a conteudo para esta categoria.')      
     else:

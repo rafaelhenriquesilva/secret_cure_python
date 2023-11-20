@@ -1,5 +1,5 @@
 from src.models.form_model import Question, Answer
-from src.utils.json_util import JSONUtil
+from src.models.response_model import ResponseForm
 import random
 
 class QuestionUseCase:
@@ -19,12 +19,9 @@ class QuestionUseCase:
            
             
         print('Você acertou a quantidade: {}'.format(len(questionCorrects)))
-        return filtered_question            
+        responseForm = ResponseForm(questionCorrects, filtered_question)
+        return responseForm            
 
-    """ 
-        Receber se o cara acertou a resposta com base no ID
-        Retornar array de respostas certas
-    """
     def shuffledAnswersAndShow(answers: list[Answer], question: Question, questionCorrects: list[Question]):
         
         shuffled_answers = []
@@ -42,10 +39,6 @@ class QuestionUseCase:
 
         return questionCorrects         
                      
-
-
-        
-
     def answeringQuestionAndReturnResult(shuffled_answers: list[Answer], correct_answer_id):
         try:
             user_vowel_answer = input("Qual opção você acha que esta correta? \n")

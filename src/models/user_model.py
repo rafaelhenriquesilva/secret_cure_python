@@ -19,7 +19,7 @@ class LevelAllow:
         
 
 class UserInfo: 
-    def __init__(self, name, level, email):
+    def __init__(self, name, level=0, email=''):
         self.name = name
         self.level = level
         self.email = email

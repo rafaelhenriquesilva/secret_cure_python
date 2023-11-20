@@ -9,21 +9,21 @@ from src.useCases.user_use_case import UserUseCase
 from src.models.user_model import UserInfo
 
 def test_read_user_infos_json():
-    data_json = JSONUtil.loadJson('user_infos.json')
+    data_json = JSONUtil.loadJson('fake.json')
     assert len(data_json['levels_allowed']) > 0
     assert len(data_json['user_info']['name']) != ''
     assert len(data_json['user_info']['email']) != ''
 
 def test_create_json():
-    data_json = JSONUtil.loadJson('user_infos.json')
+    data_json = JSONUtil.loadJson('fake.json')
     JSONUtil.createJson(data_json, 'fake.json')
-    fake_data_json = JSONUtil.loadJson('user_infos.json')
+    fake_data_json = JSONUtil.loadJson('fake.json')
     assert len(fake_data_json['levels_allowed']) > 0
     assert len(fake_data_json['user_info']['name']) != ''
     assert len(fake_data_json['user_info']['email']) != ''    
 
 def test_change_user_info_and_json():
-    fake_data_json = JSONUtil.loadJson('user_infos.json')
+    fake_data_json = JSONUtil.loadJson('fake.json')
     user_info = UserInfo('Test', 'test@mail.com', 1)
     fake_data_json = UserUseCase.updateUserInfo(user_info, fake_data_json)
     JSONUtil.createJson(fake_data_json, 'fake.json')
