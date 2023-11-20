@@ -3,12 +3,16 @@ import os
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(project_root)
+
 from src.utils.json_util import JSONUtil
 from src.utils.message_util import MessageUtil
-from src.useCases.user_use_case import UserUseCase
+
 from src.models.user_model import UserInfo, UserData
-from src.useCases.form_use_case import FormUseCase
 from src.models.form_model import FormData, Category
+
+from src.useCases.user_use_case import UserUseCase
+from src.useCases.form_use_case import FormUseCase
+from src.useCases.question_use_case import QuestionUseCase
 
 JSON_USER_NAME = 'user_infos.json'
 JSON_FORM_NAME = 'form.json'
@@ -51,7 +55,7 @@ def execute_game():
                         if doQuestions.lower() != 's':
                             print(TEXT_JSONS['STUDY_MORE']) 
                         else:
-                            print('questions')
+                            filtered_question = QuestionUseCase.showQuestionsAndAwnsers(data_form_json.questions, categories[0].api_name)
 
             else:
                 print('Não foi encontrado a conteudo para esta categoria.')      
